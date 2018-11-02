@@ -9,28 +9,28 @@ exports = module.exports = (server) => Route = class {
     get(path, controller) {
         server.route({
             method: 'GET',
-            path: server.path == "" ? path : `${server.prefix}${path}`,
+            path: typeof server.prefix == "undefined" ? path : `${server.prefix}${path}`,
             handler: controller
         });
     }
     post(path, controller) {
         server.route({
             method: 'POST',
-            path: server.path == "" ? path : `${server.prefix}${path}`,
+            path: typeof server.prefix == "undefined"? path : `${server.prefix}${path}`,
             handler: controller
         });
     }
     put(path, controller) {
         server.route({
             method: 'PUT',
-            path: server.path == "" ? path : `${server.prefix}${path}`,
+            path: typeof server.prefix == "undefined"? path : `${server.prefix}${path}`,
             handler: controller
         });
     }
     delete(path, controller) {
         server.route({
             method: 'DELETE',
-            path: server.path == "" ? path : `${server.prefix}${path}`,
+            path: typeof server.prefix == "undefined" ? path : `${server.prefix}${path}`,
             handler: controller
         });
     }

@@ -22,5 +22,5 @@ module.exports = function (server, passport) {
    /* Auth ----------------------------------------------------------------- */
     app.get('/user/validate/token/{token}/{a}', authController.getInfo)
 
-})
+ })
 }
