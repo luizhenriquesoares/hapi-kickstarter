@@ -1,21 +1,11 @@
 
 const getInfo = (req, res) => {
-    console.log(res)
 
     let obj = {
-        "todos" : 'dsd'
+        param1: req.params.token,
+        param2: req.params.a
     }
     return obj
 }
 
-const teste = (req, res) => {
-    console.log(res)
-
-    let obj = {
-        "teste" : 'teste'
-    }
-    return obj
-}
-
-
-module.exports = { getInfo, teste }
+module.exports = { getInfo }
