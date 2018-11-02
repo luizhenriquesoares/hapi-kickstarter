@@ -1,5 +1,11 @@
 {
   "dependencies": {
-    "hapi": "^17.6.2"
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "hapi": "^17.6.2",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0"
   }
 }
